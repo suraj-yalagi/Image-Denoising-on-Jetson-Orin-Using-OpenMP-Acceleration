@@ -128,7 +128,7 @@ Check the repository `LICENSE` file for the exact license. If no license file is
 ---
 
 ## Contact
-Repository owner: suraj-yalagi (GitHub)
+Repository owner: suraj-yalagi (https://github.com/suraj-yalagi)
 For questions related to benchmarking or implementation details, open an issue on the repository or contact the owner via their GitHub profile.
 
 ```
