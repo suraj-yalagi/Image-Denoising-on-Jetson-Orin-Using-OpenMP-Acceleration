@@ -2,7 +2,7 @@
 
 Image denoising pipeline implemented in C++ and accelerated with OpenMP for NVIDIA Jetson Orin platforms. The pipeline targets grayscale images with heavy salt-and-pepper style noise and combines median filtering, min-max normalization, and sharpening. Parallelization with OpenMP improves CPU core utilization and reduces end-to-end processing time.
 
-Key result: OpenMP acceleration achieves ~1.89× speedup — total time reduced from 2805.85 ms (serial) to 1478.46 ms (parallel) on the tested Jetson Orin setup.
+Key result: OpenMP acceleration achieves ~2.632× speedup — total time reduced from 5173.3 ms (serial) to 1965.05 ms (parallel) on the tested Jetson Orin setup.
 
 ---
 
@@ -90,9 +90,9 @@ If the project uses a different CLI, consult the source (main.cpp or README in t
 ---
 
 ## Results (reported)
-- Serial total time: 2805.85 ms
-- Parallel total time (OpenMP): 1478.46 ms
-- Speedup: ≈ 1.89×
+- Serial total time: 5173.3 ms
+- Parallel total time (OpenMP): 1965.05 ms 
+- Speedup: ≈ 2.632×
 These results were obtained on the described Jetson Orin target using the implemented pipeline (median filter → min-max normalization → sharpening).
 
 ---
