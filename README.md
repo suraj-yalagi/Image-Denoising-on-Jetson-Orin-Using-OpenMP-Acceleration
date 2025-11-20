@@ -1,0 +1,2 @@
+# Image-Denoising-on-Jetson-Orin-Using-OpenMP-Acceleration
+Image denoising on NVIDIA Jetson Orin using OpenMP improves processing of grayscale images with heavy noise like salt-and-pepper. A pipeline of median filtering, min-max normalization, and sharpening is parallelized to cut execution time. OpenMP boosts core usage, achieving 1.89× speedup and reducing total time from 2805.85 ms to 1478.46 ms.
