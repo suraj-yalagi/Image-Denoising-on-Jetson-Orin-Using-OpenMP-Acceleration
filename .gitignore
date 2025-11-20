@@ -1,41 +1,143 @@
-# Prerequisites
-*.d
+# .gitignore for Image-Denoising-on-Jetson-Orin-Using-OpenMP
+# C++ project targeted at NVIDIA Jetson Orin with OpenMP acceleration
 
-# Compiled Object files
-*.slo
-*.lo
+######################
+# Build / Output
+######################
+/build/
+/bin/
+/lib/
+/out/
+/dist/
+/_Install@*/
+/install/
+/inst/
+/target/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CMakeLists.txt.user
+
+# Generic object / binary files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
+*.lo
 *.la
 *.a
-*.lib
-
-# Executables
+*.lai
+*.al
+*.so
+*.so.*
+*.dylib
+*.dll
 *.exe
 *.out
-*.app
+*.elf
+*.map
+*.sym
 
-# debug information files
-*.dwo
+# Static analysis / coverage
+*.gcda
+*.gcno
+coverage/
+lcov.info
+
+######################
+# Packaging / Archives
+######################
+*.7z
+*.gz
+*.zip
+*.tar
+*.tgz
+*.rar
+
+######################
+# Logs / Runtime files
+######################
+*.log
+*.pid
+*.seed
+*.stackdump
+*.trace
+
+######################
+# OS generated
+######################
+.DS_Store
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+######################
+# Editor / IDE
+######################
+# Visual Studio Code
+.vscode/
+
+# JetBrains CLion, IntelliJ IDEA
+.idea/
+*.iml
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sdf
+
+# Emacs / Vim / Sublime / Editor temporary files
+*~
+\#*\#
+.#*
+*.swp
+.session
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+######################
+# Toolchains / Caches
+######################
+ccache/
+.cache/
+Ccache/
+.ninja_deps
+.ninja_log
+
+# Python artifacts (if any scripts/tools present)
+__pycache__/
+*.py[cod]
+env/
+venv/
+.env
+.venv
+
+######################
+# Misc / Generated
+######################
+tags
+TAGS
+cscope.*
+*.cover
+*.pyc
+
+# Do not ignore third_party or vendor sources by default, only ignore built/installed copies:
+# Example: vendor/*.a or vendor/*.so if your build generates them
+vendor/*.a
+vendor/*.so
+
+# If you create SDK/sysroot or rootfs images for Jetson during development, ignore them:
+sysroot/
+rootfs/
+flash/
+deploy/
+
+# End of .gitignore
